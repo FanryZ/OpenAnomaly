@@ -1,0 +1,12 @@
+python test.py --mode zero_shot --dataset mvtec \
+--data_path ./data/mvtec \
+--save_path ./results/mvtec/open_anomaly \
+--config_path ./open_clip/model_configs/ViT-L-14-336.json \
+--checkpoint_path path-to-pretrained-porjection-layer \
+--model ViT-L-14-336 --features_list 6 12 18 24 --pretrained openai --image_size 518 \
+--sam_prompt --mask_type softmax \
+--alpha 2.0 \
+--alpha_cross 0.0 \
+--anomaly_threshold 0.4 \
+--beta 2.0 \
+--beta_shift 0.5 \
